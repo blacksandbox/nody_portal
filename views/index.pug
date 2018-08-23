@@ -1,0 +1,48 @@
+extends layout
+
+block append content
+	h1= title
+
+
+	// 1. initialize.php has a lot of variables and functions in it
+	// require_once('../../config/initialize.php');
+	// $page_title = "STEM Labs";
+
+	// 2. product_identifier have information used for some of the pages and for handlebar
+	// include_once("../product_identifier.php");
+
+	// 3. everything in here can potentially moved to layout.pug
+	// include_once(constant("PROJECT_PATH") . "/includes/head.php");
+
+
+
+	// content header
+	// TODO: 
+	//<?php include_once(constant("PROJECT_PATH") . "/includes/" . constant("PRODUCT_HEADER"))?>
+	block content 
+
+	// MAIN CONTENT
+	main
+	div.mainContentWrapper
+		//  sidebarNav 
+		// TODO:
+		// <?php include_once(constant("PROJECT_PATH") . "/includes/sidebarNavFilter.php"); ?>
+
+		div.col.span_4_of_5.unitDescriptions
+			div#unit1.textArea.hide
+				h2.test= "Unit 1: Getting to Know the Speed Build"
+
+				p
+					Non-programming activities to do with the Speed Build for a simple build and easy transition that uses the VEX V5 hardware.
+				
+				div.tr-btnBox
+					a(class="tr-btn", href="/xyleme_content/teacher-resources/stem-lab-rubrics.pdf", target="_blank")
+						span.tr-btn-child 
+							Rubrics
+
+	// footer 
+	// TODO:
+	//<?php include_once(constant("PROJECT_PATH") . "/includes/footer.php"); ?>
+
+	// TO DO:
+	// script using isotop I think

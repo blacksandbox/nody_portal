@@ -1,0 +1,110 @@
+/* VEX IQ specific styles */
+/* VEX IQ specific styles */
+
+
+/* //////////////// styles //////////////// */
+
+.product-v5 a,
+.product-v5 h2,
+.product-v5 h3,
+.product-v5 h4 {
+    color: #D22630;
+}
+
+
+/* //////////////// header //////////////// */
+
+.product-v5 .searchButton:hover .fa-search,
+.product-v5 .mobileSearchButton:hover .fa-search {
+    color: #D22630;
+}
+
+.product-v5 header .logoLink {
+    width: 220px;
+    padding: 20px 20px 20px 10px;
+}
+
+@media only screen and (max-width: 480px) {
+    .product-v5 header .logoWrapper {
+        background: #d9272e;
+    }
+
+    .product-v5 header .logoLink {
+        padding: 0;
+    }
+
+    .product-v5 header .smLogo {
+        padding: 16px 0;
+        width: 100%;
+    }
+}
+
+
+/* //////////////// banner //////////////// */
+
+.product-v5 .banner {
+    background: url("/images/Gear-Pattern-Gear-1920x1200.jpg") center center / cover no-repeat;
+}
+
+.product-v5 h2.bannerTitleText {
+    color: #fff;
+}
+
+@media only screen and (max-width: 480px) {
+
+    .product-v5 h2.bannerTitleText {
+        color: #D22630;
+        border-top: 1px solid #ccc;
+    }
+}
+
+/* //////////////// sideBarNav //////////////// */
+
+.product-v5 .TOCWrapper ul li.active {
+    background: #D22630;
+}
+
+.product-v5 .TOCWrapper .filter-list a.checked {
+    background: #D22630;
+}
+
+.product-v5 .TOCBtn:hover {
+    background: rgba(0, 0, 0, 0) linear-gradient(#D22630 20%, transparent 20%, transparent 40%, #D22630 40%, #D22630 60%, transparent 60%, transparent 80%, #D22630 80%) repeat scroll 0 0;
+}
+
+
+/* //////////////// mainContent //////////////// */
+
+.product-v5 .productBox h4 {
+    background: #D22630;
+    color: #fff;
+}
+
+.product-v5 .productBox a {
+    color: #333;
+}
+
+.product-v5 .productBox a.productButton {
+    background-color: #D22630;
+    color: #fff;
+}
+
+.product-v5 .productBox.unitBox .unitNumberWrapper {
+    background: #D22630;
+}
+
+.product-v5 .productBox.unitBox a.openUnitBox {
+    color: #D22630;
+    background: #cce4f4;
+}
+
+/* //////////////// Home Page Welcome Links //////////////// */
+
+.icon .productBox.welcome .textWrapper {
+    height: 85px;
+}
+
+.icon .productBox.welcome a.productButton {
+    margin-bottom: 20px;
+}
+

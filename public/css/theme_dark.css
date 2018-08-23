@@ -1,0 +1,79 @@
+.dark main,
+.dark header,
+.dark {
+  background-color: #111;
+}
+
+.dark h1,
+.dark .breadcrumbs {
+  color: #9a9a9a;
+}
+
+.dark .logoWrapper {
+    height: 80px;
+    margin: 0;
+}
+
+.dark.product-edr header .lgLogo {
+  height: 20px;
+}
+
+.dark.product-edr header .smLogo {
+    padding: 5px 0 16px;
+}
+
+.dark footer {
+  background-color: #e6e6e6;
+  border-color: #111;
+  color: #b2b2b2;
+}
+
+.dark .footerContentWrapper {
+  border-color: #666666;
+}
+
+.dark footer strong {
+    color: #000;
+}
+
+.dark .icon .productBox {
+  background-color: #303030;
+}
+
+.dark .icon .productBox p {
+  color: #9a9a9a;
+}
+
+.dark .productBox {
+  border: 1px solid #111;
+}
+
+.dark .icon .productBox {
+  border: 0;
+}
+
+.dark .dev .productBox {
+  border: 1px solid #ccc;
+}
+
+.dark a.feedbackLink {
+  box-shadow: 2px 2px 10px #333;
+}
+
+.dark .TOCWrapper ul li a {
+  color: #9a9a9a;
+}
+
+/* disable search for V5 Beta site */
+.dark header.stickyHeader .mobileSearchButton,
+.dark #searchBox, 
+.dark .searchButton {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) { 
+  .fixedFrame .mainContentWrapper {
+    top: 128px;
+  }
+}
+

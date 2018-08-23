@@ -1,0 +1,56 @@
+
+
+/* //////////////////////////////////////////////////////////// Feedback Link //////////////////////////////////////////////////////////// */
+
+.feedbackLink {
+    padding: 60px 0 0 30px;
+    display: block;
+}
+
+a.feedbackLink{
+  display:inline-block;
+  background-color: #D22630;
+  color: #fff;
+  
+  width: 150px;
+  height: 30px;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  
+  text-align: center;
+  padding: 10px 0 0 0;
+  
+  cursor:pointer;
+  
+  /* transition: <property> <duration> <timing-function> <delay>; */
+  -webkit-transition: 
+    height 0.3s;
+    /*background-color 2s, 
+    -webkit-transform 2s;*/
+  transition: height 0.3s;
+    /*background-color 2s, 
+    transform 2s;*/
+
+}
+
+a.feedbackLink:hover{
+  /*background-color: #f94852;*/
+  text-decoration: none;
+  height: 40px;
+
+}
+
+
+/* state style */
+
+ul#command_list ul[order="1"] li a[selected="selected"]{
+  background-color: #D22630;
+  color: white;
+}
+
+ul#command_list ul[order="1"] li a[inactive="true"]{
+  color: black;
+  pointer-events: none;
+}

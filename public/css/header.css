@@ -1,0 +1,570 @@
+/* //////////////////////////////////////////////////////////// Import Search Icon //////////////////////////////////////////////////////////// */
+
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+
+
+/* //////////////////////////////////////////////////////////// Header //////////////////////////////////////////////////////////// */
+
+header {
+  width: 100%;
+  height: 92px;
+  background-color: #fff;
+  z-index: 100;
+  position: fixed;
+  z-index: 10;
+}
+
+.headerContentWrapper {
+  width: 96%;
+  max-width: 1260px;
+  height: 100%;
+  padding: 0 2%;
+  margin: 0 auto;
+  position: relative;
+  display: table;
+}
+
+.logoLink {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 2px;
+  margin: 0;
+  width: 220px;
+  /*transition: width .2s linear;*/
+}
+
+.lgLogo {
+  display: block;
+}
+
+.smLogo {
+  display: none;
+}
+
+.breadcrumbs {
+  margin: 5px 18px 18px;
+  line-height: 1.3em;
+}
+
+@media only screen and (max-width: 850px) {
+  header {
+    height: 66px;
+  }
+
+  .logoLink {
+    width: 150px;
+    padding: 0 5px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  header {
+    height: 40px;
+  }
+
+  .headerContentWrapper {
+    background: #D22630;
+    width: 96%;
+    padding: 0 2%;
+  }
+
+  .lgLogo {
+    display: none;
+  }
+
+  .smLogo {
+    display: block;
+  }
+
+  .logoLink {
+    padding: 11px 0 10px;
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+  }
+
+}
+
+
+/* ------------------------------------------------------ Primary Nav ------------------------------------------------------ */
+
+nav {
+  display: block;
+  /*border-bottom: 1px solid #ededed;*/
+  clear: both;
+}
+
+.nav-primary {
+  float: right;
+  margin-top: 0;
+  display: block;
+  margin-top: 15px;
+}
+
+.nav-primary li.level0,
+.nav-primary a.level0 {
+  display: inline-block;
+}
+
+.nav-primary li {
+  position: relative;
+}
+
+.nav-primary li.level0,
+.nav-primary a.level0 {
+  display: inline-block;
+}
+
+.nav-primary li {
+  position: relative;
+}
+
+.nav-primary a {
+  text-decoration: none;
+  position: relative;
+  display: block;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: normal;
+}
+
+.nav-primary a.level0 {
+  padding: 10px 20px;
+}
+
+ol.nav-primary>li.level0>ul {
+  top: 40px;
+}
+
+.nav-primary li.level0 ul {
+  width: 300px;
+}
+
+.nav-primary li.level0 ul {
+  background: #fbfbfb;
+  border: solid 1px #ccc;
+  position: absolute;
+  left: 0;
+  top: 30px;
+  z-index: 10;
+  width: 250px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: none;
+}
+
+.nav-primary li.level0 ul:hover {
+  display: block;
+}
+
+.nav-primary li a.has-children:hover+ul {
+  display: block;
+}
+
+.nav-primary li.level0 ul li {
+  border-bottom: 1px solid #ccc;
+  text-decoration: none;
+}
+
+.nav-primary li.level0 ul li:last-child {
+  border-bottom: none;
+}
+
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+/*              Teacher Portal Control         */
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+
+.teacherPortalControl{
+	float:right;
+	display:inline-block;
+	
+}
+
+.teacherPortalControl a.portal_button{
+	display:inline;
+	position: relative;
+	top: 36px;
+	background-color: #D22630;
+	vertical-align: middle;
+	border-radius: 5px;
+	padding: 20px;
+	color: white;
+  margin: 0 0 0 5px;
+}
+
+@media only screen and (max-width: 850px) {
+    .teacherPortalControl a.portal_button{
+      top: 23px;
+      padding: 16px 20px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .teacherPortalControl a.portal_button{
+      display: none;
+    }
+}
+
+/* when sticky */
+header.stickyHeader .teacherPortalControl a.portal_button{
+	display:inline;
+	top: 15px;
+	background-color: #D22630;
+	vertical-align: middle;
+	
+	padding: 6px 10px;
+	color: white;
+	
+	transition: padding 0.2s, top 0.2s;
+}
+
+@media only screen and (max-width: 480px) {
+    header.stickyHeader .teacherPortalControl {
+      float: right;
+      display: inline-block;
+    }
+
+    header.stickyHeader .teacherPortalControl a.portal_button{
+      display: inline;
+      top: 11px;
+      background-color: #666; 
+      padding: 5px 10px;
+      margin: 0;
+      font-size: 14px;
+    }
+}
+
+
+/* ------------------------------------------------------ Search Bar ------------------------------------------------------ */
+
+.searchForm {
+  width: 85%;
+  margin: 15px 30px;
+  position: relative;
+  float: right;
+}
+
+.search {
+  width: 98%;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+  color: #555;
+  font-size: 14px;
+  height: 34px;
+  line-height: 1.42857;
+  padding: 4px 0 4px 2%;
+  margin: 0;
+}
+
+.search:focus {
+  border: 1px solid #54a5cd;
+}
+
+.fa-search {
+  color: #ccc;
+  font-size: 20px;
+  top: 20px;
+  transition: color .3s linear;
+}
+
+.searchButton,
+.mobileSearchButton {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  border: none;
+  background-color: transparent;
+  color: none;
+  cursor: pointer;
+}
+
+.mobileSearchButton {
+  display: none;
+}
+
+
+
+
+/* ------------------------------------------------------ Sticky Header Styles ------------------------------------------------------ */
+
+header.stickyHeader {
+  box-shadow: 0 1px 8px rgba(200, 200, 200, 0.5);
+}
+
+@media only screen and (min-width: 480px) {
+  header.stickyHeader {
+    position: fixed;
+    top: 0;
+    overflow: visible;
+    height: 50px;
+  }
+  .fixedFrame header.stickyHeader {
+    height: 50px;
+  }
+  header.stickyHeader .logoWrapper {
+    margin: 0 40px 0 0;
+    padding: 0;
+    width: 17%;
+  }
+  header.stickyHeader .logoLink {
+    width: 15%;
+    min-width: 115px;
+    margin-left: 10px;
+    height: 37px;
+  }
+  header.stickyHeader .searchWrapper {
+    margin-top: 0;
+  }
+  header.stickyHeader .searchForm {
+    margin-top: 7px;
+  }
+  header.stickyHeader .search {
+    height: 25px;
+  }
+  header.stickyHeader .searchButton {
+    top: 7px;
+  }
+
+  header.stickyHeader .breadcrumbs {
+    margin: 20px 18px 18px;
+    float: right;
+  }
+
+  .fixedFrame header.stickyHeader .breadcrumbs {
+    margin: 18px;
+    float: right;
+  }
+
+  /* ////////////////// */
+  header.stickyHeader .searchWrapper {
+    width: 90px;
+    height: 45px;
+    position: absolute;
+    right: 30px;
+    display: none;
+  }
+  header.stickyHeader .searchForm {
+    margin-top: 12px;
+  }
+  header.stickyHeader nav {
+    float: left;
+    clear: none;
+    width: 75%;
+    border: none;
+  }
+  .nav-primary {
+    margin-top: 3px;
+  }
+  .nav-primary a.level0 {
+    padding: 10px;
+  }
+  header.stickyHeader .mobileSearchButton {
+    display: block;
+    top: 18px;
+    right: 30px;
+  }
+  header.stickyHeader.openSearch {
+    height: 115px;
+  }
+  header.stickyHeader.openSearch .searchWrapper {
+    width: 100%;
+    height: 45px;
+    position: absolute;
+    left: -50%;
+    padding-left: 50%;
+    top: 50px;
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  header.stickyHeader .headerContentWrapper {
+    height: 40px;
+    display: block;
+  }
+
+  header.stickyHeader .logoLink {
+    padding: 5px 0 10px;
+    width: 136px;
+    float: left;
+  }
+}
+
+
+
+
+
+/* //////////////////////////////////////////////////////////// Media Queries //////////////////////////////////////////////////////////// */
+
+/*@media only screen and (max-width: 1260px) {
+
+  .headerContentWrapper {
+    width: 96%;
+    padding: 0 2% 0;
+  }
+  .logoLink {
+    padding: 7px;
+  }
+  .searchForm {
+    float: none;
+    margin: 15px auto;
+    width: 90%;
+  }
+}
+
+
+/* Tablets in portrait mode (769-980px) */
+
+/*@media only screen and (max-width: 980px) {
+
+  .logoLink {
+    float: none;
+    padding: 12px 10px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+
+  .nav-primary {
+    width: 100%;
+    height: 0;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+    background-color: #ededed;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav-primary li.level0,
+  .nav-primary a.level0 {
+    display: block;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+    color: #636363;
+  }
+
+  .nav-primary a.level0:hover {
+    background-color: #f4f4f4;
+  }
+
+  .nav-primary a.level0 {
+    line-height: 35px;
+    padding: 0 15px 0 25px;
+    border: none;
+  }
+
+  .nav-primary li.parent>a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    display: block;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid #ccc;
+    border-right: 0;
+    top: 50%;
+    left: 10px;
+    right: auto;
+    margin-top: -5px;
+  }
+}
+
+
+/* Smartphones in landscape mode (481-768px) */
+
+/*@media only screen and (max-width: 850px) {
+
+  .headerContentWrapper {
+    width: 100%;
+    padding: 0;
+  }
+  .logoLink {
+    padding: 20px 10px;
+  }
+}
+
+
+
+/* Smartphones in portrait mode (0-480px) */
+
+/*@media only screen and (max-width: 480px) {
+
+  .logoWrapper {
+    margin: 0;
+    width: 100%;
+  }
+  .logoLink {
+    padding: 0;
+    display: block;
+    padding: 0;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .lgLogo {
+    display: none;
+  }
+  .smLogo {
+    display: block;
+    margin: 0 auto;
+    padding: 15px 10px;
+    min-height: 44px;
+    min-width: 100px;
+    max-width: 187px;
+    width: 65%;
+  }
+  .mobileSearchButton {
+    display: none;
+    float: left;
+    position: relative;
+    width: 20%;
+    padding: 10px;
+    border-right: 1px solid #ccc;
+    top: 0;
+    height: 45px;
+    min-width: 50px;
+  }
+  .fa-search {
+    width: 25px;
+    height: 25px;
+    margin: 2px auto 0;
+  }
+  .searchWrapper {
+    display: none;
+  }
+  .searchForm {
+    margin: 15px auto 0;
+  }
+  .search {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .fixedFrame .logoWrapper {
+    height: 50px;
+  }
+  .fixedFrame .smLogo {
+    min-height: 40px;
+    height: 40px;
+    padding: 5px;
+  }
+  .fixedFrame .mobileSearchButton {
+    display: none;
+  }
+}
+
+
+
+/* turn off search and headerLinks for retail versions */
+
+#retail .searchWrapper,
+#retail nav,
+#retail .nav-primary {
+  display: none;
+}

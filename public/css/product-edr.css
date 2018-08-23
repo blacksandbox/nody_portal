@@ -1,0 +1,100 @@
+/* VEX IQ specific styles */
+
+
+/* //////////////// styles //////////////// */
+
+.product-edr a,
+.product-edr h2,
+.product-edr h3,
+.product-edr h4 {
+    color: #D22630;
+}
+
+/* temporarily hide the search bar */
+.searchWrapper,
+.mobileSearchButton {
+    display: none!important;
+}
+
+/* //////////////// header //////////////// */
+
+.product-edr .searchButton:hover .fa-search,
+.product-edr .mobileSearchButton:hover .fa-search {
+    color: #D22630;
+}
+
+/* //////////////// banner //////////////// */
+
+.product-edr .banner {
+    background: url("/images/Gear-Pattern-Gear-1920x1200.jpg") center center / cover no-repeat;
+}
+
+.product-edr h2.bannerTitleText {
+    color: #fff;
+}
+
+@media only screen and (max-width: 480px) {
+
+    .product-edr h2.bannerTitleText {
+        color: #D22630;
+    }
+}
+
+
+/* //////////////// sideBarNav //////////////// */
+
+.product-edr .TOCWrapper ul li.active {
+    background: #D22630;
+}
+
+.product-edr .TOCWrapper .filter-list a.checked {
+    background: #D22630;
+}
+
+.product-edr .TOCBtn:hover {
+    background: rgba(0, 0, 0, 0) linear-gradient(#D22630 20%, transparent 20%, transparent 40%, #D22630 40%, #D22630 60%, transparent 60%, transparent 80%, #D22630 80%) repeat scroll 0 0;
+}
+
+
+/* //////////////// mainContent //////////////// */
+
+.product-edr .productBox h4 {
+    background: #D22630;
+    color: #fff;
+}
+
+.product-edr .productBox a {
+    color: #333;
+}
+
+.product-edr .productBox a.productButton {
+    background-color: #D22630;
+    color: #fff;
+}
+
+.product-edr .productBox.unitBox .unitNumberWrapper {
+    background: #D22630;
+}
+
+.product-edr .productBox.unitBox a.openUnitBox {
+    color: #D22630;
+    background: #cce4f4;
+}
+
+/* The initial version of the V5 site will only include STEM Labs. Therefore, the breadcrumbs are not needed. They are temporarily hidden below. */
+
+.breadcrumbs {
+    display: none;
+}
+
+/* The following two styles are also due to the temporary hiding of the breadcrumbs */
+
+@media only screen and (max-width: 768px) { 
+  .fixedFrame .mainContentWrapper {
+    top: 51px !important;
+  }
+}
+
+
+
+

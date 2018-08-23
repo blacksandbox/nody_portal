@@ -1,0 +1,118 @@
+/* VEX IQ specific styles */
+
+
+/* //////////////// styles //////////////// */
+
+.product-uni a {
+    color: #D22630;
+}
+
+.product-uni h2,  
+.product-uni h3,
+.product-uni h4 {
+    color: #8a8a8d;
+}
+
+/* //////////////// header //////////////// */
+
+.product-uni .searchButton:hover .fa-search,
+.product-uni .mobileSearchButton:hover .fa-search {
+    color: #8a8a8d;
+}
+
+.product-uni header .logoLink {
+    width: 60%;
+    padding: 0px 15px;
+}
+
+.product-uni .nav-primary a {
+    color: #636363;
+}
+
+@media only screen and (max-width: 1020px) {
+    .product-uni header .logoLink {
+        padding: 10px 15px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .product-uni header.stickyHeader .logoLink {
+        width: 15%;
+        min-width: 84px;
+        padding: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .product-uni header .logoWrapper {
+        background: #8a8a8d;
+    }
+
+    .product-uni header .logoLink {
+        width: 40%;
+        padding: 0 15px;
+    }
+
+    .product-uni header .smLogo {
+        padding: 10px 10px;
+    }
+}
+
+
+/* //////////////// banner //////////////// */
+
+.product-uni .banner {
+    background: url("/images/Gear-Pattern-Gear-1920x1200.jpg") center center / cover no-repeat;
+}
+
+.product-uni h2.bannerTitleText {
+    color: #fff;
+}
+
+@media only screen and (max-width: 480px) {
+
+    .product-uni h2.bannerTitleText {
+        color: rgba(138,138,141,.6);
+    }
+}
+
+
+/* //////////////// sideBarNav //////////////// */
+
+.product-uni .TOCWrapper ul li.active {
+    background: #8a8a8d;
+}
+
+.product-uni .TOCWrapper .filter-list a.checked {
+    background: #8a8a8d;
+}
+
+.product-uni .TOCBtn:hover {
+    background: rgba(0, 0, 0, 0) linear-gradient(#8a8a8d 20%, transparent 20%, transparent 40%, #8a8a8d 40%, #8a8a8d 60%, transparent 60%, transparent 80%, #8a8a8d 80%) repeat scroll 0 0;
+}
+
+
+/* //////////////// mainContent //////////////// */
+
+.product-uni .mainContentWrapper {
+    margin: 0 auto 80px;
+}
+
+.product-uni .productBox h4 {
+    background: #8a8a8d;
+}
+
+.product-uni .productBox a.productButton {
+    background-color: #8a8a8d;
+}
+
+.product-uni .productBox.unitBox .unitNumberWrapper {
+    background: #8a8a8d;
+}
+
+.product-uni .productBox.unitBox a.openunitBox {
+    color: #8a8a8d;
+    background: #cce4f4;
+}
+
+

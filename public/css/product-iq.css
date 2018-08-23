@@ -1,0 +1,105 @@
+/* VEX IQ specific styles */
+
+
+/* //////////////// styles //////////////// */
+
+.product-iq a,
+.product-iq h2,  
+.product-iq h3,
+.product-iq h4 {
+    color: #0077c8;
+}
+
+
+/* //////////////// header //////////////// */
+
+.product-iq .searchButton:hover .fa-search,
+.product-iq .mobileSearchButton:hover .fa-search {
+    color: #0077c8;
+}
+
+.product-iq header .logoLink {
+    width: 90%;
+    padding: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+    .product-iq header .logoLink {
+        padding: 15px 10px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .product-iq header.stickyHeader .logoLink {
+        width: 15%;
+        padding: 10px 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .product-iq header .logoWrapper {
+        background: #0077c8;
+    }
+
+    .product-iq header .logoLink {
+        padding: 0;
+    }
+
+    .product-iq header .smLogo {
+        padding: 10px 0 12px;
+    }
+}
+
+
+/* //////////////// banner //////////////// */
+
+.product-iq .banner {
+    background: url("/images/Gear-Pattern-Gear-1920x1200.jpg") center center / cover no-repeat;
+}
+
+.product-iq h2.bannerTitleText {
+    color: #fff;
+}
+
+@media only screen and (max-width: 480px) {
+
+    .product-iq h2.bannerTitleText {
+        color: #0077c8;
+    }
+}
+
+
+/* //////////////// sideBarNav //////////////// */
+
+.product-iq .TOCWrapper ul li.active {
+    background: #0077c8;
+}
+
+.product-iq .TOCWrapper .filter-list a.checked {
+    background: #0077c8;
+}
+
+.product-iq .TOCBtn:hover {
+    background: rgba(0, 0, 0, 0) linear-gradient(#0077c8 20%, transparent 20%, transparent 40%, #0077c8 40%, #0077c8 60%, transparent 60%, transparent 80%, #0077c8 80%) repeat scroll 0 0;
+}
+
+
+/* //////////////// mainContent //////////////// */
+
+.product-iq .productBox h4 {
+    background: #0077c8;
+    color: #fff;
+}
+
+.product-iq .productBox a.productButton {
+    background-color: #0077c8;
+}
+
+.product-iq .productBox.unitBox .unitNumberWrapper {
+    background: #0077c8;
+}
+
+.product-iq .productBox.unitBox a.openUnitBox {
+    color: #0077c8;
+    background: #cce4f4;
+}

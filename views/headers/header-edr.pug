@@ -1,0 +1,35 @@
+header.section.group
+	div.headerContentWrapper
+		a.logoLink(href="/", title="VEX Product Documentation Home")
+			img.lgLogo(src="/images/VEXEDR-horizontal-FC-transp.svg")
+			img.smLogo(src="/images/VEXEDR-horizontal-white-transp.svg")
+ 
+		div(class="searchWrapper col span_3_of_4")
+
+			div.searchForm
+				input(id="searchBox", class="search", type="text", placeholder="search...")
+				button(class="searchButton", onclick="return clickSearch(event);")
+					span(class="fa fa-search")
+
+	div.teacherPortalControl
+		a(class="portal_button", href="/t-portal/index.php") Teacher's Portal
+
+		nav(id="nav col span_1_of_5")
+			div(class="navTOCBtnWrapper TOCBtnWrapper")
+				div(class="navTOCBtn TOCBtn")
+	
+			button(class="mobileSearchButton")
+				span(class="fa fa-search")
+			div(class="breadcrumbs col")
+				a(href="/") Home
+				span(id="breadcrumbPath")
+					// TODO:
+					// handlebar breadcrumb!
+
+// TODO:
+// more handlebars breadcrumb script here
+
+
+// banner
+section(class="banner", style="background-image: url('/images/EDR-RedGearPattern-Computer-Rev1-1920x1200.jpg');")  
+	h2(class="bannerTitleText")= title

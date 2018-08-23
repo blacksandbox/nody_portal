@@ -1,0 +1,188 @@
+/* //////////////////////////////////////////////////////////// Teacher Portal Styles //////////////////////////////////////////////////////////// */
+
+.teacherBanner {
+    width: 100%;
+    background: #999;
+    padding: 0;
+    margin: 0 0 30px;
+    height: 60px;
+    display: table;
+}
+
+.teacherBanner p {
+    color: #fff;
+    margin: 0;
+    font-size: 2em;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+@media only screen and (max-width: 480px) {
+    .teacherBanner {
+        background: none;
+        margin: -25px 0 10px;
+    }
+
+    .teacherBanner p {
+        color: #999;
+    }
+}
+
+.textArea {
+    padding: 0;
+}
+
+.textArea h2 {
+    margin: 30px 1%;
+    text-align: center;
+}
+
+.textArea p, .textArea li {
+    font-size: 16px;
+    line-height: 1.53em;
+    margin: 0 1% 15px;
+    padding: 0 10px;
+    color: #555;
+    text-align: center;
+}
+
+.textArea ul {
+    list-style: disc inside none;
+    padding: 20px 0;
+}
+
+.tr-btnBox {
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+a.tr-btn {
+    width: 168px;
+    background: #D22630;
+    text-align: center;
+    border-radius: 8px;
+    height: 40px;
+    padding: 16px 10px;
+    margin: 10px;
+    float: left;
+    display: table;
+}
+
+span.tr-btn-child {
+    color: #fff !important;
+    line-height: 1.2em;
+    font-weight: bold;
+    font-size: 15px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+a.tr-btn:hover span {
+    text-decoration: underline;
+}
+
+.tr-tile a  {
+    display: block;
+    line-height: 1.6em;
+}
+
+@media only screen and (max-width: 480px) {
+    a.tr-btn {
+        float: none;
+        margin: 10px auto;
+    }
+}
+
+
+
+
+.teacherDocInfo{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-flow: wrap;
+}
+
+.teacherDocInfo li{
+    flex-grow: 1;
+    flex-basis: 0; /*works only if you have flex-grow*/
+    min-width: 350px;
+    max-width: 400px;
+    margin: 20px 0;
+    overflow: hidden; /*this appears to force flex container's width*/
+
+    list-style-type: none;
+
+    /*this container is also a flex container*/
+    display: flex;
+    flex-flow: column;
+
+}
+
+.teacherDocInfo li .icon{
+    display:inline;
+    flex-shrink: 0; /*need this in order for width and height to work*/
+    align-self: center;
+    width: 110px; height: 110px;
+}
+
+.teacherDocInfo li .icon img{
+    width: 100%;
+    height: 100%;
+}
+
+.teacherDocInfo li .desc{
+
+    text-align: center;
+}
+
+.teacherDocInfo li .desc strong{
+    color: red;
+}
+
+.icon .unitBtn .textWrapper {
+    height: 180px;
+}
+
+@media only screen and (max-width: 1100px) {
+    .icon .unitBtn {
+        height: 390px;
+    }
+}
+
+.productWrapper.unitBtnWrapper {
+    padding-top: 55px;
+}
+
+.productWrapper .unitBtn h2 {
+    margin: 16px 1% 0;
+    text-align: center;
+}
+
+.productWrapper .unitBtn h3 {
+    padding: 8px 0 12px;
+}
+
+.icon .unitBtn {
+    padding: 0px 0 24px;
+}
+
+.icon .productImage {
+   max-width: 110px;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+@media only screen and (max-width: 850px) {
+    .mainContentWrapper .unitDescriptions {
+        width: 90%;
+        padding: 0 5%;
+    }
+}

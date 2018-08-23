@@ -1,0 +1,115 @@
+doctype html
+html
+	head
+		title= "VEX Portal #{title}"
+
+		// meta name="robots" content="noindex nofollow"
+		meta(charset="utf-8")
+		// Always force latest IE rendering engine & Chrome Frame
+		meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
+
+		meta(name="description", content="#{page_title}")
+		meta(name="keywords", content="#{page_title}")
+		meta(http-equiv="cleartype", content="on")
+
+		// Add favicon here 
+		// <link rel="icon" href="<?=url_for('/images/vex'.PRODUCT_ID.'.ico')?>" type="image/x-icon" />
+
+		//  Responsive and mobile friendly stuff 
+		meta(name="HandheldFriendly", content="True")
+		meta(name="MobileOptimized", content="320")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+
+
+		// Stylesheets
+		// responsive grid stylesheets
+		link(rel="stylesheet", href="/css/html5reset.css", media="all")
+		link(rel="stylesheet", href="/css/col.css", media="all")
+		link(rel="stylesheet", href="/css/2cols.css", media="all")
+		link(rel="stylesheet", href="/css/3cols.css", media="all")
+		link(rel="stylesheet", href="/css/4cols.css", media="all")
+		link(rel="stylesheet", href="/css/5cols.css", media="all")
+		link(rel="stylesheet", href="/css/6cols.css", media="all")
+		link(rel="stylesheet", href="/css/7cols.css", media="all")
+		link(rel="stylesheet", href="/css/8cols.css", media="all")
+		link(rel="stylesheet", href="/css/9cols.css", media="all")
+		link(rel="stylesheet", href="/css/10cols.css", media="all")
+		link(rel="stylesheet", href="/css/11cols.css", media="all")
+		link(rel="stylesheet", href="/css/12cols.css", media="all")
+
+		//  main stylesheets 
+		link(rel="stylesheet", href="/css/header.css", media="all")
+		link(rel="stylesheet", href="/css/banner.css", media="all")
+		link(rel="stylesheet", href="/css/mainContent.css", media="all")
+		link(rel="stylesheet", href="/css/sideBarNav.css", media="all")
+		link(rel="stylesheet", href="/css/footer.css", media="all")
+		link(rel="stylesheet", href="/css/styles.css", media="all")
+		link(rel="stylesheet", href="/css/product-uni.css", media="all")
+		link(rel="stylesheet", href="/css/product-iq.css", media="all")
+		link(rel="stylesheet", href="/css/product-edr.css", media="all")
+		link(rel="stylesheet", href="/css/product-v5.css", media="all")
+		link(rel="stylesheet", href="/css/t-portal.css", media="all")
+
+
+		// Aktiv Grotesk font link
+		//<link rel="stylesheet" href="https://use.typekit.net/ked6dgj.css">
+
+		// style for overall theme 
+		link(rel="stylesheet", href="/css/theme_dark.css", media="all")
+
+		// style for toc and search_form specific 
+		//<link rel="stylesheet" href="<?=url_for('/css/feedback.css')?>" type="text/css" media="all">
+
+		// jQuery 
+		script( src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js")
+		//<script src="<?=url_for('/scripts/imagesloaded.pkgd.min.js')?>"></script>
+		//<script src="<?=url_for('/scripts/isotope.pkgd.min.js')?>"></script>
+		//<script src="<?=url_for('/scripts/isotope.settings.js')?>"></script>
+
+	
+		//  fancyBox3 (http://fancyapps.com/fancybox/3/) 
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js")
+		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css")
+
+		// what is this?
+		//  jquery.cssAnimateAuto (https://github.com/davidtheclark/jquery.cssAnimateAuto) 
+		//<script src="<?=url_for('/scripts/jquery.cssAnimateAuto.min.js')?>"></script>
+
+		//  custom scripts (includes sticky header, accordian, and mobile nav) 
+		script(src="/scripts/script.js")
+
+		// do we still need this?
+		// iframe resizer. Also recieves lesson titles 
+		//<script src="<?=url_for('/scripts/iframeResizer.js')?>"></script>
+
+		// I believe this was for search bar
+		// Crypto.js 
+		//script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.min.js"></script>
+
+
+	
+
+	body(class="product-#{PRODUCT_ID}")
+
+		//script(src="/scripts/lib.js")
+		script(src="/scripts/ajax.js")
+		script(src="/scripts/env.js")
+		script(src="/scripts/cdsApi.js")
+		script(src="/scripts/hbHelpers.js")
+
+		//content header
+		include headers/header-edr.pug
+
+		//content body
+		block content
+
+
+
+
+
+
+	
+
+  

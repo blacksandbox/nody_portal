@@ -1,0 +1,60 @@
+
+
+/* //////////////////////////////////////////////////////////// Banner //////////////////////////////////////////////////////////// */
+
+.banner {
+    height: 200px;
+    overflow: hidden;
+    width: 100%;
+    display: table;
+    background-attachment: fixed;
+    top: 92px;
+    margin-bottom: 92px;
+    position: relative;
+    z-index: 1;
+}
+
+.bannerTitleText {
+    font-size: 3em;
+    margin: 0 auto;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    color: #fff;
+}
+
+
+/* //////////////////////////////////////////////////////////// Media Queries //////////////////////////////////////////////////////////// */
+
+
+/* Smartphones in portrait mode (0-850px) */
+
+@media only screen and (max-width: 850px) {
+    
+    .banner {
+        height: 140px;
+        top: 66px;
+        margin-bottom: 66px;
+    }
+
+    .bannerTitleText {
+        font-size: 2.2em;
+    }
+}
+
+/* Smartphones in portrait mode (0-480px) */
+
+@media only screen and (max-width: 480px) {
+    
+    .banner {
+        background-image: none !important;
+        height: 100px;
+        top: 58px;
+        margin-bottom: 58px;
+    }
+}
+
+#retail .banner {
+    height: 150px;
+    padding-top: 90px;
+}
