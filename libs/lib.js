@@ -1,9 +1,6 @@
 // browser based hack used for previous php version of portal
 // var lib = lib || window.lib;
 
-// need to import jquery for nody portal
-var $,jQuery = require('jquery');
-
 var lib = function() {
   "use strict";
 

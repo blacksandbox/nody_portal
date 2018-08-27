@@ -53,13 +53,13 @@ html
 
 
 		// Aktiv Grotesk font link
-		//<link rel="stylesheet" href="https://use.typekit.net/ked6dgj.css">
+		link(rel="stylesheet", href="https://use.typekit.net/ked6dgj.css")
 
 		// style for overall theme 
 		link(rel="stylesheet", href="/css/theme_dark.css", media="all")
 
 		// style for toc and search_form specific 
-		//<link rel="stylesheet" href="<?=url_for('/css/feedback.css')?>" type="text/css" media="all">
+		link(rel="stylesheet", href="/css/feedback.css", type="text/css", media="all")
 
 		// jQuery 
 		script( src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
@@ -93,11 +93,12 @@ html
 
 	body(class="product-#{PRODUCT_ID}")
 
+		// These are modules now...
 		//script(src="/scripts/lib.js")
-		script(src="/scripts/ajax.js")
-		script(src="/scripts/env.js")
-		script(src="/scripts/cdsApi.js")
-		script(src="/scripts/hbHelpers.js")
+		//script(src="/scripts/ajax.js")
+		//script(src="/scripts/env.js")
+		//script(src="/scripts/cdsApi.js")
+		//script(src="/scripts/hbHelpers.js")
 
 		//content header
 		include headers/header-edr.pug

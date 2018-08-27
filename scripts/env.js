@@ -1,7 +1,13 @@
-var env = env || window.env;
+//var env = env || window.env;
+
+// require other modules
+var ajax = require('../scripts/ajax');
+
+
+
 
 var onEnv = function(callback) {
-  if (window.env && !$.isEmptyObject(window.env)) {
+  if (env && !$.isEmptyObject(env)) {
     callback();
   } else {
     $(document).on("envReady", callback);
@@ -30,9 +36,9 @@ var env = (function () {
   var env = {};
 
   var getEnv = function () {
-    if (window.ajax && window.ajax.getSync) {
+    if (ajax && ajax.getSync) {
       try {
-        window.ajax.getSync(ROOT_URL + '/env.json', setEnv);
+        ajax.getSync(ROOT_URL + '/env.json', setEnv);
       } catch (ex) {
         setEnv(dev);
       }
@@ -41,7 +47,7 @@ var env = (function () {
 
   var setEnv = function (envJson) {
     env = envJson || dev;
-    window.env = env;
+    //window.env = env;
     $(document).trigger("envReady");
   };
 

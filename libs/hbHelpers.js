@@ -18,7 +18,6 @@ var helpers = (function($) {
 
   /* Private Scope */
 
-  // Register all the custom helpers
   var init = function(h) {
     if (Handlebars) {
       Handlebars.templates = {};

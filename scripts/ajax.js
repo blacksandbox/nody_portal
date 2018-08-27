@@ -4,7 +4,15 @@
 // var ajax = ajax || window.ajax;
 
 // need to import jquery for nody portal
-var $,jQuery = require('jquery');
+//var $,jQuery = require('jquery');
+// Update 06/27/2018 - Major update to jsdom
+var jsdom = require("jsdom");
+const { JSDOM } = jsdom;
+const { window } = new JSDOM();
+const { document } = (new JSDOM('')).window;
+global.document = document;
+
+var $ = jQuery = require('jquery')(window);
 
 // import library
 // oh...do I not need to do this here?
